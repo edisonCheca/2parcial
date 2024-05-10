@@ -1,19 +1,23 @@
 import React from "react";
 import "./UserDetails.css";
+import image from "./imagenes/gimnasia.png";
 
-
-const UserDetails = ({ character }) => {
+const UserDetails = () => {
     return (
-        <div>
-            <div className="Imagen">
-                <img src={character.image} alt={`avatar de ${character.name}`} />
+        <>
+            <div className="componente1">
+                <img src={image} alt="Imagen de gimnasia" />
             </div>
-            <div className="titulo">
-                <h2>{character.name}</h2>
-                <h4>{character.species}</h4>
-                <p>{character.gender} {character.status}</p>
+
+            <div className="componente2">
+                <h2>Terapia 2</h2>
+                <h4>Ejercicios pélvicos</h4>
             </div>
-        </div>
+        </>
+
+        
+
+
     );
 };
 

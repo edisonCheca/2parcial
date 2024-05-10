@@ -1,19 +1,14 @@
-import React from 'react'
+import React from 'react';
 import "./ButtonSection.css";
+import image from "./imagenes/gimnasia.png";
 
-const ButtonSection = ({ socialLinks }) => {
-    console.log(socialLinks)
+const ButtonSection = () => {
     return (
-        <div>
-            <div className="botones">
-                {
-                    
-                }
-
-
-            </div>
+        <div className="botones">
+            <img src={image} alt="Imagen de gimnasia" />
+            <p>Texto del párrafo</p>
         </div>
-    )
+    );
 }
 
-export default ButtonSection
+export default ButtonSection;
